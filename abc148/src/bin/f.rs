@@ -2,12 +2,12 @@ use proconio::input;
 use proconio::marker::*;
 use std::cmp::*;
 
+
 fn main() {
     input! {
-        a: i32,
-        b: i32,
+        n: u32,
+        u: u32,
+        v: u32,
+        
     }
-    let res = 6 - a - b;
-    println!("{}",res);
-    
 }
