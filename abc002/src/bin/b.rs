@@ -60,7 +60,7 @@ fn main() {
                 .chars()
                 .filter(
                     |x| 
-                    !is_vowel(*x)
+                    !is_vowel(x)
                 )
                 .collect();
 
@@ -68,7 +68,7 @@ fn main() {
     println!("{}",res);
 }
 
-fn is_vowel(s: char) -> bool{
+fn is_vowel(s: &char) -> bool{
     match s{
         'a' | 'i' | 'u' | 'e' | 'o' => true,
         _ => false
